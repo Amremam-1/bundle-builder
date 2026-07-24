@@ -8,7 +8,7 @@ import {
 import { useAppDispatch, useAppSelector } from "../../../store/hook";
 
 import QuantityControl from "../../QuantityControl";
-import SummaryItem from "./summeryItem";
+import SummaryItem from "./SummaryItem";
 
 const SummaryLeft = () => {
   const dispatch = useAppDispatch();
