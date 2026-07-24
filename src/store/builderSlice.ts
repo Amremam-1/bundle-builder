@@ -5,7 +5,7 @@ export interface BuilderState {
   selections: Record<string, SelectedProduct>;
 }
 
-const initialState: BuilderState = {
+const defaultState: BuilderState = {
   selections: {
     "cam-v4": {
       productId: "cam-v4",
@@ -79,6 +79,13 @@ const initialState: BuilderState = {
     },
   },
 };
+
+const saveState = localStorage.getItem("builder-state");
+
+const initialState: BuilderState = saveState
+  ? JSON.parse(saveState)
+  : defaultState;
+
 const builderSlice = createSlice({
   name: "builder",
   initialState,

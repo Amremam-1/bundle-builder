@@ -1,6 +1,6 @@
 import type { RootState } from ".";
 
-// return all product
+// return all product in initialState
 export const selectBuilderSelections = (state: RootState) =>
   state.builder.selections;
 
