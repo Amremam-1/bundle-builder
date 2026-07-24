@@ -32,9 +32,11 @@ const Step = ({
         ${isOpen ? "rounded-lg bg-surface-muted" : ""}
       `}
     >
-      <h1 className="block md:hidden  xl:hidden text-[31px] py-6.25 font-normal text-center">
-        Let’s get started!
-      </h1>
+      {step.title === "Choose your cameras" && (
+        <h1 className="block md:hidden  xl:hidden text-[31px] py-6.25 font-normal text-center">
+          Let’s get started!
+        </h1>
+      )}
       <p className="px-3.75 pt-2 pb-1 text-xs font-normal uppercase tracking-widest text-text-secondary">
         STEP {step.stepNumber} OF {totalSteps}
       </p>
