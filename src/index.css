@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", sans-serif;
+
+  /* Backgrounds */
+  --color-background: #ffffff;
+  --color-surface-muted: #edf4ff;
+
+  /* Brand */
+  --color-primary: #4e2fd2;
+  --color-primary-hover: #5c45e0;
+  --color-primary-soft: #8d8fe6;
+
+  /* Text */
+  --color-text-primary: #1f1f1f;
+  --color-text-muted: #575757;
+  --color-text-secondary: #484848;
+  --color-text-subtle: #1f1f1fbf;
+
+  /* Steps */
+  --color-step-primary: #0b0d10;
+
+  /* Icons */
+  --color-icon-primary: #6f7882;
+  --color-icon-muted: #a8b2bd;
+
+  /* Borders */
+  --color-border: #ced6de;
+  --color-border-selected: #4e2fd2b2;
+  --color-border-success: #0aa288;
+
+  /* Status */
+  --color-success: #0aa288;
+
+  /* Links */
+  --color-link: #1991ea;
+}
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Manrope", sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
